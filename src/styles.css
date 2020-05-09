@@ -1,0 +1,8 @@
+body, html{
+  font-family: sans-serif;
+  background-image: url(../src/assets/img/base1-HD_horizontal.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+
+}

@@ -1,0 +1,26 @@
+<div class="form-container">
+  <div class="grid-2">
+    <h3 class="contact-us textj">Únete a:</h3>
+    <a [routerLink]="['/inicio']"><img src="../../../assets/img/El Kompa-logo__2.svg" alt="Logo" class="logojoin"></a>
+  </div>
+  <form [formGroup]="personsForm" (ngSubmit)="onSaveDef(personsForm.value)">
+    <input type="text" formControlName="name" placeholder="Nombre Completo">
+    <input type="text" formControlName="email" placeholder="Correo Electronico">
+    <input type="text" formControlName="cedula" placeholder="Numero de Identidad">
+    <label class="image">RTN</label>
+    <input type="file" accept=".png, .jpg, .jpeg, .pdf" formControlName="RTN" (change)="handleImage($event)">
+    <label class="image">Curriculum</label>
+    <input type="file" accept=".png, .jpg, .jpeg, .pdf" formControlName="cv" (change)="handleImage2($event)">
+    <label class="image">Licencia</label>
+    <input type="file" accept=".png, .jpg, .jpeg, .pdf" formControlName="lic" (change)="handleImage3($event)">
+    <input type="text" formControlName="phone" placeholder="Telefono">
+    <label class="image">Recibo Público</label>
+    <input type="file" accept=".png, .jpg, .jpeg, .pdf" formControlName="rec" (change)="handleImage4($event)">
+    <textarea formControlName="ref" placeholder="Referencias Personales"></textarea>
+    <label class="image">Revisión</label>
+    <input type="file" accept=".png, .jpg, .jpeg, .pdf" formControlName="rev" (change)="handleImage5($event)">
+    <label>Kompa</label>
+    <input type="text" formControlName="kompas" placeholder="Escribe Hogar o Vehiculo">
+    <button type="submit" class="btn-send">Enviar</button>
+  </form>
+</div>
