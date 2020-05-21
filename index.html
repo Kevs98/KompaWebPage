@@ -34,6 +34,31 @@
 <!-- End Facebook Pixel Code -->
 <link rel="stylesheet" href="styles.ade3de719a5b0662d2c0.css"></head>
 <body>
+  <!-- Load Facebook SDK for JavaScript -->
+  <div id="fb-root"></div>
+  <script>
+    window.fbAsyncInit = function() {
+      FB.init({
+        xfbml            : true,
+        version          : 'v7.0'
+      });
+    };
+
+    (function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = 'https://connect.facebook.net/es_ES/sdk/xfbml.customerchat.js';
+    fjs.parentNode.insertBefore(js, fjs);
+  }(document, 'script', 'facebook-jssdk'));</script>
+
+  <!-- Your Chat Plugin code -->
+  <div class="fb-customerchat"
+    attribution=setup_tool
+    page_id="111721463859607"
+    logged_in_greeting="¿Hola como puedo ayudarte?"
+    logged_out_greeting="¿Hola como puedo ayudarte?">
+  </div>
   <app-root></app-root>
 <script src="runtime-es2015.0811dcefd377500b5b1a.js" type="module"></script><script src="runtime-es5.0811dcefd377500b5b1a.js" nomodule defer></script><script src="polyfills-es5.c219b7059a7feb126472.js" nomodule defer></script><script src="polyfills-es2015.3fd94ed6a324eee92aec.js" type="module"></script><script src="main-es2015.17538d7b17f9592bc527.js" type="module"></script><script src="main-es5.17538d7b17f9592bc527.js" nomodule defer></script></body>
 </html>
